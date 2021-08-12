@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgb(195, 0, 0), rgb(0, 173, 173));
+}
+
+.app-child {
+  text-align: center;
+  max-width: 600px;
+  width: 400px;
+  background-color: white;
+  color: black;
+  margin: 0 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px black;
+}

@@ -1,0 +1,101 @@
+.head {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.step {
+  color: white;
+  padding: 5px 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step p {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  cursor: pointer;
+  position: relative;
+}
+
+.step p::before {
+  content: "";  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.step:nth-child(2)::before,
+.step:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translate(0, -50%);
+  height: 2px;
+  /* background-color: rgb(248, 42, 42); */
+}
+
+.step:nth-child(1)::after,
+.step:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  transform: translate(0, -50%);
+  height: 2px;
+  /* background-color: rgb(92, 205, 135); */
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form input,
+.form select {
+  padding: 10px 14px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline-color: cornflowerblue;
+  font-size: 1rem;
+}
+
+.form input[type="submit"] {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.form span {
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 0;
+  justify-content: center;
+  border: 2px dashed grey;
+  margin: 10px 0;
+}
